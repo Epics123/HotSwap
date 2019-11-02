@@ -30,8 +30,11 @@ public class ObjectSwap : MonoBehaviour
     {
         Vector3 tmp;
 
-        tmp = closeObject.position;
-        closeObject.position = swapObject.position;
-        swapObject.position = tmp;
+		if (left.GetComponent<Item>().weight == right.GetComponent<Item>().weight)
+		{
+			tmp = closeObject.position;
+			closeObject.position = swapObject.position;
+			swapObject.position = tmp;
+		}
     }
 }
