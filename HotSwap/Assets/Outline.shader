@@ -8,7 +8,23 @@
     }
     SubShader
     {
-        Tags { "RenderType"="Opaque" }
+		Pass 
+		{
+			Tags { "RenderType" = "Opaque" }
+			Cull Front
+
+			CGPROGRAM
+
+			#pragma vertex vert
+			#pragma fragment frag
+			#include "UnityCG.cginc"
+
+			struct v2f
+			{
+				float4 pos : SV_POSITION;
+			};
+		}
+        
         LOD 200
 
         CGPROGRAM
