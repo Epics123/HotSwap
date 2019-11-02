@@ -15,16 +15,7 @@ public class ObjectSwap : MonoBehaviour
 		rightHand = GameObject.Find("Controller (right)");
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        //if(Input.GetKeyDown(KeyCode.R))
-        //{
-        //    SwapObjects(leftHand.GetComponent<pointer>().objectHit, rightHand.GetComponent<pointer>().objectHit);
-        //}
-    }
-
-
+	//Swaps objects if weight classes are equal
     public void SwapObjects(GameObject left, GameObject right)
     {
         Vector3 tmp;

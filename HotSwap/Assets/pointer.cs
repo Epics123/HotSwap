@@ -14,6 +14,7 @@ public class pointer : MonoBehaviour
 	public float swapCooldown = 0.3f;
 	public float timeSince = 0.0f;
 
+	//Reset to null in gamemanager after it is used
     public GameObject objectHit;
 
     // Start is called before the first frame update

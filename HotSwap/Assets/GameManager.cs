@@ -29,6 +29,8 @@ public class GameManager : MonoBehaviour
 		if (leftHand.GetComponent<pointer>().objectHit != null && rightHand.GetComponent<pointer>().objectHit != null)
 		{
 			swapper.SwapObjects(leftHand.GetComponent<pointer>().objectHit, rightHand.GetComponent<pointer>().objectHit);
+
+			//Reset to null to prevent infinite swap
 			leftHand.GetComponent<pointer>().objectHit = null;
 			rightHand.GetComponent<pointer>().objectHit = null;
 		}
