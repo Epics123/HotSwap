@@ -10,4 +10,6 @@ public class Item : ScriptableObject
 	public uint weight;
 
 	List<Item> items = new List<Item>();
+
+	public GameObject model;
 }

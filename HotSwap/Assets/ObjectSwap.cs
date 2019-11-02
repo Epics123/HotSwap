@@ -5,7 +5,6 @@ using UnityEngine;
 public class ObjectSwap : MonoBehaviour
 {
 
-    public Transform closeObject, swapObject;
 	public GameObject leftHand;
 	public GameObject rightHand;
 
@@ -19,22 +18,22 @@ public class ObjectSwap : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.R))
-        {
-            SwapObjects(leftHand.GetComponent<pointer>().objectHit, rightHand.GetComponent<pointer>().objectHit);
-        }
+        //if(Input.GetKeyDown(KeyCode.R))
+        //{
+        //    SwapObjects(leftHand.GetComponent<pointer>().objectHit, rightHand.GetComponent<pointer>().objectHit);
+        //}
     }
 
 
-    void SwapObjects(GameObject left, GameObject right)
+    public void SwapObjects(GameObject left, GameObject right)
     {
         Vector3 tmp;
 
-		if (left.GetComponent<ItemInterface>().getWeightClass() == right.GetComponent<ItemInterface>().getWeightClass())
+		if (left.GetComponent<ItemInterface>().getWeightClass().Equals(right.GetComponent<ItemInterface>().getWeightClass()))
 		{
-			tmp = closeObject.position;
-			closeObject.position = swapObject.position;
-			swapObject.position = tmp;
+			tmp = left.transform.position;
+			left.transform.position = right.transform.position;
+			right.transform.position = tmp;
 		}
     }
 }

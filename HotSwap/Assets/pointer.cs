@@ -40,10 +40,11 @@ public class pointer : MonoBehaviour
     {
         if (pose == null)
             pose = this.GetComponent<SteamVR_Behaviour_Pose>();
-        if (fire != null && fire.GetState(pose.inputSource))
-        {
-            firePointer();
-        }
+		//if (fire != null && fire.GetState(pose.inputSource))
+		//{
+		//    firePointer();
+		//}
+		firePointer();
 
 
     }
@@ -54,9 +55,9 @@ public class pointer : MonoBehaviour
         Ray ray = new Ray(holder.transform.position, transform.TransformDirection(Vector3.forward));
         if (Physics.Raycast(ray, out hit, 1000f))
         {
-            if (hit.transform.tag == "grabbable")
+            if (hit.transform.CompareTag("grabbable"))
             {
-                Debug.Log("memes");
+                Debug.Log("meme " + hit.transform.name);
                 objectHit = hit.transform.gameObject;
             }
         }
