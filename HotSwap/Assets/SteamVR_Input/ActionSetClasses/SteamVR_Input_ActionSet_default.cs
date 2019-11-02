@@ -105,11 +105,11 @@ namespace Valve.VR
             }
         }
         
-        public virtual SteamVR_Action_Boolean plant
+        public virtual SteamVR_Action_Boolean firePointer
         {
             get
             {
-                return SteamVR_Actions.default_plant;
+                return SteamVR_Actions.default_firePointer;
             }
         }
         
