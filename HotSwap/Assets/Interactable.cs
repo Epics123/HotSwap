@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Intractable : MonoBehaviour
+public class Interactable : MonoBehaviour
 {
     public int touchCount;
     void start()
