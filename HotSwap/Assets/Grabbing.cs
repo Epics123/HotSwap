@@ -26,16 +26,6 @@ public class Grabbing : MonoBehaviour
 	// Update is called once per frame
     void Update()
 	{
-		if(GetTeleportDown())
-		{
-			print("Teleport " + handType);
-		}
-
-		if(GetGrab())
-		{
-			print("Grab " + handType);
-		}
-
 		if(grabAction.GetLastStateDown(handType))
 		{
 			if(collidingObject)

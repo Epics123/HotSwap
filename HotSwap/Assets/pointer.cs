@@ -32,6 +32,7 @@ public class pointer : MonoBehaviour
         line.transform.localRotation = Quaternion.identity;
 
         BoxCollider collider = line.GetComponent<BoxCollider>();
+		collider.enabled = false;
         Material newMaterial = new Material(Shader.Find("Unlit/Color"));
         newMaterial.SetColor("_Color", color);
         line.GetComponent<MeshRenderer>().material = newMaterial;
