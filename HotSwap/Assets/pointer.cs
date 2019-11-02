@@ -11,7 +11,7 @@ public class pointer : MonoBehaviour
     public SteamVR_Action_Boolean fire;
     public GameObject holder;
     public GameObject line;
-	public float swapCooldown = 0.3f;
+	public float swapCooldown = 0.1f;
 	public float timeSince = 0.0f;
 
 	//Reset to null in gamemanager after it is used

@@ -15,4 +15,4 @@ MonoBehaviour:
   name: duck
   description: A duck
   weight: 5
-  model: {fileID: 100000, guid: 9032788735d6b984689d781524150480, type: 3}
+  model: {fileID: 100000, guid: 0a64bc7bce816a34ab079113229ad389, type: 3}
