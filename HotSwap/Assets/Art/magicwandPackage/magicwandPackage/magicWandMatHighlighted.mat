@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: appleMat
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_Name: magicWandMatHighlighted
+  m_Shader: {fileID: 4800000, guid: 70231a9b42365f443904b56eac6307b9, type: 3}
   m_ShaderKeywords: _METALLICGLOSSMAP _NORMALMAP _PARALLAXMAP
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -20,7 +20,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: 73c0529fd0b8b2f47b546fb6727cf8dd, type: 3}
+        m_Texture: {fileID: 2800000, guid: 15e003c48ddbbbd45ab1da98d535b975, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -44,27 +44,23 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 1ced9bcc69f95224e903fab86e78c1db, type: 3}
+        m_Texture: {fileID: 2800000, guid: 4088b7708f36cba48b53a0d9b6328104, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: 4fc988745ecbd1e44b76a2b5b7e29ad5, type: 3}
+        m_Texture: {fileID: 2800000, guid: d156e0c6e29ac5d4b8e3375ae3925c90, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
-        m_Texture: {fileID: 2800000, guid: 7a24284dc9b0ae04a825046753b7a0fc, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _OutlineTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 3fd4912d12e29614faf367682b8879e2, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
-        m_Texture: {fileID: 2800000, guid: 26b0ee42e11f0bd4dba0ffa94b9c2b4b, type: 3}
+        m_Texture: {fileID: 2800000, guid: 98598a89e034fc94dad2e7d3a15f5adf, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _BlurRadius: 1.24
+    - _BlurRadius: 1
     - _BumpAmt: 128
     - _BumpScale: 1
     - _Cutoff: 0.5
@@ -73,10 +69,11 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _Intensity: 0.431
+    - _Intensity: 0.01
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
+    - _OutlineWidth: 1.04
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -85,5 +82,5 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _DistortColor: {r: 0, g: 0.31750298, b: 1, a: 1}
+    - _DistortColor: {r: 0.5780567, g: 1, b: 0.3066038, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
