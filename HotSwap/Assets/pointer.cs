@@ -11,7 +11,10 @@ public class pointer : MonoBehaviour
     public SteamVR_Action_Boolean fire;
     public GameObject holder;
     public GameObject line;
+	public float swapCooldown = 0.3f;
+	public float timeSince = 0.0f;
 
+	//Reset to null in gamemanager after it is used
     public GameObject objectHit;
 
     // Start is called before the first frame update
@@ -40,12 +43,13 @@ public class pointer : MonoBehaviour
     {
         if (pose == null)
             pose = this.GetComponent<SteamVR_Behaviour_Pose>();
-        if (fire != null && fire.GetState(pose.inputSource))
-        {
-            firePointer();
-        }
+		if (fire.state && timeSince >= swapCooldown)
+		{
+			firePointer();
+			timeSince = 0.0f;
+		}
 
-
+		timeSince += Time.deltaTime;
     }
 
     void firePointer()
@@ -54,9 +58,8 @@ public class pointer : MonoBehaviour
         Ray ray = new Ray(holder.transform.position, transform.TransformDirection(Vector3.forward));
         if (Physics.Raycast(ray, out hit, 1000f))
         {
-            if (hit.transform.tag == "grabbable")
+            if (hit.transform.CompareTag("grabbable"))
             {
-                Debug.Log("memes");
                 objectHit = hit.transform.gameObject;
             }
         }
