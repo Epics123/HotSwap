@@ -11,6 +11,8 @@ public class pointer : MonoBehaviour
     public SteamVR_Action_Boolean fire;
     public GameObject holder;
     public GameObject line;
+	public float swapCooldown = 0.3f;
+	public float timeSince = 0.0f;
 
     public GameObject objectHit;
 
@@ -40,13 +42,13 @@ public class pointer : MonoBehaviour
     {
         if (pose == null)
             pose = this.GetComponent<SteamVR_Behaviour_Pose>();
-		//if (fire != null && fire.GetState(pose.inputSource))
-		//{
-		//    firePointer();
-		//}
-		firePointer();
+		if (fire.state && timeSince >= swapCooldown)
+		{
+			firePointer();
+			timeSince = 0.0f;
+		}
 
-
+		timeSince += Time.deltaTime;
     }
 
     void firePointer()
@@ -57,7 +59,6 @@ public class pointer : MonoBehaviour
         {
             if (hit.transform.CompareTag("grabbable"))
             {
-                Debug.Log("meme " + hit.transform.name);
                 objectHit = hit.transform.gameObject;
             }
         }
