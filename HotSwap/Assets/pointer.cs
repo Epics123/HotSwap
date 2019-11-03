@@ -8,7 +8,6 @@ public class pointer : MonoBehaviour
     public Color color;
     public float thickness = 0.002f;
     public SteamVR_Behaviour_Pose pose;
-    public SteamVR_Action_Boolean fire;
     public GameObject holder;
     public GameObject line;
 	public float swapCooldown = 0.1f;
@@ -31,8 +30,6 @@ public class pointer : MonoBehaviour
         line.transform.localPosition = new Vector3(0f, 0f, 50f);
         line.transform.localRotation = Quaternion.identity;
 
-        BoxCollider collider = line.GetComponent<BoxCollider>();
-		collider.enabled = false;
         Material newMaterial = new Material(Shader.Find("Unlit/Color"));
         newMaterial.SetColor("_Color", color);
         line.GetComponent<MeshRenderer>().material = newMaterial;
@@ -44,15 +41,8 @@ public class pointer : MonoBehaviour
     {
         if (pose == null)
             pose = this.GetComponent<SteamVR_Behaviour_Pose>();
-		if (fire.state && timeSince >= swapCooldown)
-		{
-			firePointer();
-			timeSince = 0.0f;
-		}
 
-		checkHighlight();
-
-		timeSince += Time.deltaTime;
+        firePointer();
     }
 
     void firePointer()
@@ -64,21 +54,12 @@ public class pointer : MonoBehaviour
             if (hit.transform.CompareTag("grabbable"))
             {
                 objectHit = hit.transform.gameObject;
+                hit.transform.gameObject.GetComponent<HighlightObject>().isHighlighted = true;
+            }
+            else
+            {
+                objectHit = null;
             }
         }
     }
-
-	void checkHighlight()
-	{
-		RaycastHit hit;
-		Ray ray = new Ray(holder.transform.position, transform.TransformDirection(Vector3.forward));
-		if (Physics.Raycast(ray, out hit, 1000f))
-		{
-			if (hit.transform.CompareTag("grabbable"))
-			{
-				Debug.Log("Should make highlighted");
-				hit.transform.gameObject.GetComponent<HighlightObject>().isHighlighted = true;
-			}
-		}
-	}
 }

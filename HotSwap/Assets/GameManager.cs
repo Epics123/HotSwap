@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Valve.VR;
 
 public class GameManager : MonoBehaviour
 {
@@ -8,9 +9,11 @@ public class GameManager : MonoBehaviour
 	ObjectSwap swapper;
 	GameObject leftHand;
 	GameObject rightHand;
+    public SteamVR_Action_Boolean fire;
+    public SteamVR_Behaviour_Pose pose;
 
 
-	private void Awake()
+    private void Awake()
 	{
 		instance = this;
 	}
@@ -26,9 +29,9 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		if (leftHand.GetComponent<pointer>().objectHit != null && rightHand.GetComponent<pointer>().objectHit != null)
+		if (leftHand.GetComponent<pointer>().objectHit != null && rightHand.GetComponent<pointer>().objectHit != null && fire.GetState(pose.inputSource))
 		{
-			swapper.SwapObjects(leftHand.GetComponent<pointer>().objectHit, rightHand.GetComponent<pointer>().objectHit);
+			swapper.SwapObjects(leftHand.GetComponent<pointer>().objectHit, rightHand.GetComponent<pointer>().objectHit );
 
 			//Reset to null to prevent infinite swap
 			leftHand.GetComponent<pointer>().objectHit = null;
