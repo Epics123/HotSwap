@@ -50,6 +50,8 @@ public class pointer : MonoBehaviour
 			timeSince = 0.0f;
 		}
 
+		checkHighlight();
+
 		timeSince += Time.deltaTime;
     }
 
@@ -65,4 +67,18 @@ public class pointer : MonoBehaviour
             }
         }
     }
+
+	void checkHighlight()
+	{
+		RaycastHit hit;
+		Ray ray = new Ray(holder.transform.position, transform.TransformDirection(Vector3.forward));
+		if (Physics.Raycast(ray, out hit, 1000f))
+		{
+			if (hit.transform.CompareTag("grabbable"))
+			{
+				Debug.Log("Should make highlighted");
+				hit.transform.gameObject.GetComponent<HighlightObject>().isHighlighted = true;
+			}
+		}
+	}
 }

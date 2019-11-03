@@ -9,16 +9,12 @@ public class HighlightObject : MonoBehaviour
 
     public bool isHighlighted = false;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
         Highlight();
+		//if (isHighlighted)
+		//	isHighlighted = !isHighlighted;
     }
 
 
@@ -28,16 +24,5 @@ public class HighlightObject : MonoBehaviour
             GetComponent<Renderer>().material = boarder;
         else
             GetComponent<Renderer>().material = nonBoarder;
-    }
-
-    //Test highlighting with mouse
-    private void OnMouseOver()
-    {
-        isHighlighted = true;
-    }
-
-    private void OnMouseExit()
-    {
-        isHighlighted = false;
     }
 }
