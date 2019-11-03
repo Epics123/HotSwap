@@ -1,15 +1,8 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:HotSwap/Assets/Art/RawEnvironmentPackage/Clock/clockMatHighlight.mat.meta
-guid: 56c6c87936a8dd24283b2d1e288f5617
+guid: fecfaf02473bb5d4d86f4169cb26dc03
 NativeFormatImporter:
   externalObjects: {}
-  mainObjectFileID: 2100000
-=======
-guid: e73ef7aabbc2d684aacf777d253069c7
-NativeFormatImporter:
-  externalObjects: {}
-  mainObjectFileID: 7400000
->>>>>>> LevelScripting:HotSwap/Assets/Art/ParticleEffects/Soundwave_anim.anim.meta
+  mainObjectFileID: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
