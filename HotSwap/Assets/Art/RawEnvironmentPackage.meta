@@ -1,6 +1,10 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:HotSwap/Assets/Art/RawEnvironmentPackage.meta
 guid: ed24d0698563f634b90d61e195d7cbdb
 folderAsset: yes
+=======
+guid: 252bbff357f3ab9459d5c897b17ba4da
+>>>>>>> LevelScripting:HotSwap/Assets/Scenes/jakeTest.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
