@@ -3,15 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Provides various method for interacting with an object's sound and handles collision sounds
+/// Provides various method for interacting with an object's sound and handles collision sounds.
 /// </summary>
 public class ObjectSound : MonoBehaviour
 {
-    public AudioClip uniqueAudioClip;
-    [Tooltip("Choose a collisionClip based on the size of object: small, med, or large.")]
-    public AudioClip collisionClip;
+    private AudioClip uniqueAudioClip;
+    private AudioClip collisionClip;
 
     private AudioSource audioSource;
+    private ItemInterface objItemInt;
+    
+
     
     
     // Methods --------------------------------------------------------------
@@ -38,5 +40,9 @@ public class ObjectSound : MonoBehaviour
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
+        objItemInt = GetComponent<ItemInterface>();
+
+        uniqueAudioClip = objItemInt.uniqueAudio;
+        collisionClip = objItemInt.collisionAudio;
     }
 }
