@@ -76,6 +76,21 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.308
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7460790671915193743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5194296453453284095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80093a828cd993c4685c34e4e32e2097, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boarder: {fileID: 2100000, guid: db53046b9e8833c4e89af05e3cd28eff, type: 2}
+  nonBoarder: {fileID: 2100000, guid: 200a895a8e2713943abd576c223443e6, type: 2}
+  isHighlighted: 0
 --- !u!1001 &5194296453453186143
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -145,6 +160,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf15c53d76e4a8d41a33d3362cfad4c2, type: 3}
+--- !u!1 &5194296453453284095 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: bf15c53d76e4a8d41a33d3362cfad4c2,
+    type: 3}
+  m_PrefabInstance: {fileID: 5194296453453186143}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5194296453452799711 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: bf15c53d76e4a8d41a33d3362cfad4c2,

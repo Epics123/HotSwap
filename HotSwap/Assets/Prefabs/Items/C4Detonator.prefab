@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2920573096998175566}
   - component: {fileID: 7232017682519737517}
   - component: {fileID: 8705481684444168400}
+  - component: {fileID: 8155652512962169518}
   m_Layer: 0
   m_Name: C4Detonator
   m_TagString: grabbable
@@ -76,6 +77,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8155652512962169518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5583218320828333152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80093a828cd993c4685c34e4e32e2097, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boarder: {fileID: 2100000, guid: 3e50d7209e9c55548a1002c364858fd0, type: 2}
+  nonBoarder: {fileID: 2100000, guid: 787f4d636ca33da4da1bddd4cd9c71f2, type: 2}
+  isHighlighted: 0
 --- !u!1001 &7380591951208135388
 PrefabInstance:
   m_ObjectHideFlags: 0

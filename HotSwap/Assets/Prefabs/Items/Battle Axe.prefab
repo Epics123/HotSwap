@@ -76,6 +76,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1301040114276965645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3256131053341759949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80093a828cd993c4685c34e4e32e2097, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boarder: {fileID: 2100000, guid: 1db4717f711c30045b99ec84e5077ee7, type: 2}
+  nonBoarder: {fileID: 2100000, guid: 2bf8d31f5752605418d6e8dd63381a5f, type: 2}
+  isHighlighted: 0
 --- !u!1001 &3256131053341663085
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -143,8 +158,18 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: f9429764f58476b4bb7ce87181b27bea, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2bf8d31f5752605418d6e8dd63381a5f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9429764f58476b4bb7ce87181b27bea, type: 3}
+--- !u!1 &3256131053341759949 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: f9429764f58476b4bb7ce87181b27bea,
+    type: 3}
+  m_PrefabInstance: {fileID: 3256131053341663085}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3256131053341525485 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: f9429764f58476b4bb7ce87181b27bea,

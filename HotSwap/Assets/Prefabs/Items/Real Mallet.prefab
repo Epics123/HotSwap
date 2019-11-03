@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8471907244732702124}
   - component: {fileID: 7681310052746066689}
   - component: {fileID: 5256589656980269182}
+  - component: {fileID: 114087542141702122}
   m_Layer: 0
   m_Name: Real Mallet
   m_TagString: grabbable
@@ -76,6 +77,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &114087542141702122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5706422577453548341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80093a828cd993c4685c34e4e32e2097, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boarder: {fileID: 2100000, guid: 68abb09e85df4ff41bbaad18f86480b3, type: 2}
+  nonBoarder: {fileID: 2100000, guid: 68abb09e85df4ff41bbaad18f86480b3, type: 2}
+  isHighlighted: 0
 --- !u!1001 &7273210947964921916
 PrefabInstance:
   m_ObjectHideFlags: 0
