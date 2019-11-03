@@ -42,7 +42,7 @@ public class ObjectSound : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         objItemInt = GetComponent<ItemInterface>();
 
-        uniqueAudioClip = objItemInt.uniqueAudio;
-        collisionClip = objItemInt.collisionAudio;
+        uniqueAudioClip = objItemInt.getUniqueAudio();
+        collisionClip = objItemInt.getCollisionAudio();
     }
 }

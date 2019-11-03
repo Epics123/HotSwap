@@ -10,4 +10,14 @@ public class ItemInterface : MonoBehaviour
 	{
 		return "medium";
 	}
+
+	public AudioClip getUniqueAudio()
+	{
+		return item.uniqueAudio;
+	}
+
+	public AudioClip getCollisionAudio()
+	{
+		return item.uniqueAudio;
+	}
 }
