@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 2178917941373189521}
   - component: {fileID: 1583479874889495694}
   - component: {fileID: 8049966858388326472}
+  - component: {fileID: 7230539042757463531}
+  - component: {fileID: 7079618219293223180}
   m_Layer: 0
   m_Name: ClockFBX
   m_TagString: Untagged
@@ -122,6 +124,31 @@ MonoBehaviour:
   boarder: {fileID: 2100000, guid: 56c6c87936a8dd24283b2d1e288f5617, type: 2}
   nonBoarder: {fileID: 2100000, guid: 45d17a975a2d5c641a8e2dec6273d5a2, type: 2}
   isHighlighted: 0
+--- !u!114 &7230539042757463531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2178917940921222860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2da56cb4721f43f48a12201fed59520e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: 11bab56d0aa1392498409c54db03d31f, type: 2}
+--- !u!114 &7079618219293223180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2178917940921222860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9be3f04fe8cf8a344ad30656ab78879f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2178917942060048665
 GameObject:
   m_ObjectHideFlags: 0
