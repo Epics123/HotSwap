@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2178917940923422732}
   - component: {fileID: 2178917941373189521}
   - component: {fileID: 1583479874889495694}
+  - component: {fileID: 8049966858388326472}
   m_Layer: 0
   m_Name: ClockFBX
   m_TagString: Untagged
@@ -106,6 +107,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 9.290302, y: 24.709963, z: 9.290305}
   m_Center: {x: 0, y: 7.7098303, z: -0.0000007152557}
+--- !u!114 &8049966858388326472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2178917940921222860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80093a828cd993c4685c34e4e32e2097, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boarder: {fileID: 2100000, guid: 56c6c87936a8dd24283b2d1e288f5617, type: 2}
+  nonBoarder: {fileID: 2100000, guid: 45d17a975a2d5c641a8e2dec6273d5a2, type: 2}
+  isHighlighted: 0
 --- !u!1 &2178917942060048665
 GameObject:
   m_ObjectHideFlags: 0
