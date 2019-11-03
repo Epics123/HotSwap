@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 7764357224575214745}
   - component: {fileID: 5080115736250043355}
   - component: {fileID: 6516508692147438105}
-  - component: {fileID: 7810481821177850129}
+  - component: {fileID: 5947356506106365854}
   m_Layer: 0
   m_Name: Saw Blade
   m_TagString: grabbable
@@ -78,8 +78,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &7810481821177850129
-MeshCollider:
+--- !u!65 &5947356506106365854
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -88,10 +88,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 4300000, guid: 1accfb35ddb430e459c145e705c2724a, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.22354475, y: 0.006176591, z: 0.20445344}
+  m_Center: {x: -0.005092308, y: 0.0009788275, z: -0.00036139786}
 --- !u!1001 &242231768722989211
 PrefabInstance:
   m_ObjectHideFlags: 0

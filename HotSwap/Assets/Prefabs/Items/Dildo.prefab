@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 604701118138845679}
   - component: {fileID: 8551555931986913087}
   - component: {fileID: 5195985136809643502}
-  - component: {fileID: 5646298234105198527}
+  - component: {fileID: 2161027696557469521}
   m_Layer: 0
   m_Name: Dildo
   m_TagString: grabbable
@@ -63,8 +63,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &5646298234105198527
-MeshCollider:
+--- !u!65 &2161027696557469521
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -73,10 +73,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 4300000, guid: fbedc128451011e43a81fddbb991a3bd, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.25174537, y: 0.4096328, z: 0.24288881}
+  m_Center: {x: 0.01127027, y: -0.00077551603, z: -0.008051038}
 --- !u!114 &7290803130823916670
 MonoBehaviour:
   m_ObjectHideFlags: 0

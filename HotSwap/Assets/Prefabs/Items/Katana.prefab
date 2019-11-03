@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5573632948015945866}
   - component: {fileID: 1145654559676555723}
   - component: {fileID: 659234079123258176}
-  - component: {fileID: 5428978376836507145}
+  - component: {fileID: 2203747977172588741}
   m_Layer: 0
   m_Name: Katana
   m_TagString: grabbable
@@ -63,8 +63,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &5428978376836507145
-MeshCollider:
+--- !u!65 &2203747977172588741
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -73,10 +73,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 0}
+  serializedVersion: 2
+  m_Size: {x: 0.018825527, y: 0.022203177, z: 0.16610157}
+  m_Center: {x: -0.0011614691, y: -0.0005554706, z: 0.27526122}
 --- !u!114 &5200089815121511524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92,6 +91,19 @@ MonoBehaviour:
   boarder: {fileID: 2100000, guid: 11f1c2944432984419de67950736a2f0, type: 2}
   nonBoarder: {fileID: 2100000, guid: b4b50156b3b64e0448d79f6f9dbb2b8d, type: 2}
   isHighlighted: 0
+--- !u!65 &3757884253547873723
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2390096285240620994}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0007601492, y: 0.0002961956, z: 0.0010855616}
+  m_Center: {x: 0.0036950146, y: -0.00018362366, z: -0.017349591}
 --- !u!1001 &2390096285240586594
 PrefabInstance:
   m_ObjectHideFlags: 0

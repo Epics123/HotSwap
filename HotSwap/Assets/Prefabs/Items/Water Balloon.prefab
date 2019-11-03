@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 8040945414468371865}
   - component: {fileID: 9205297374801483149}
   - component: {fileID: 1894639389174521825}
-  - component: {fileID: 8588360396789545948}
   m_Layer: 0
   m_Name: Water Balloon
   m_TagString: grabbable
@@ -77,13 +76,13 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.1
   m_Center: {x: -0.1, y: 0.05, z: 0}
---- !u!114 &8588360396789545948
+--- !u!114 &308690960953426516
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4178774972333806392}
+  m_GameObject: {fileID: 5400606473840455401}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 80093a828cd993c4685c34e4e32e2097, type: 3}
@@ -161,6 +160,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8543342980f2cf048874f5ff16f44900, type: 3}
+--- !u!1 &5400606473840455401 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 8543342980f2cf048874f5ff16f44900,
+    type: 3}
+  m_PrefabInstance: {fileID: 5400606473840420937}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5400606473840030409 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 8543342980f2cf048874f5ff16f44900,

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2769195343031534161}
   - component: {fileID: 4282394237071652183}
   - component: {fileID: 5741829952858299717}
-  - component: {fileID: 7458663499196678149}
+  - component: {fileID: 2352725520598800025}
   m_Layer: 0
   m_Name: Megaphon
   m_TagString: grabbable
@@ -63,8 +63,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &7458663499196678149
-MeshCollider:
+--- !u!65 &2352725520598800025
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -73,10 +73,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 0}
+  serializedVersion: 2
+  m_Size: {x: 0.22194907, y: 0.2719065, z: 0.22972718}
+  m_Center: {x: -0.0053370446, y: 0.0111081, z: 0.0031457692}
 --- !u!114 &1504929612895367016
 MonoBehaviour:
   m_ObjectHideFlags: 0

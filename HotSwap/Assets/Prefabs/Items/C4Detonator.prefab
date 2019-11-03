@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 2920573096998175566}
   - component: {fileID: 7232017682519737517}
   - component: {fileID: 8705481684444168400}
-  - component: {fileID: 8155652512962169518}
   m_Layer: 0
   m_Name: C4Detonator
   m_TagString: grabbable
@@ -77,13 +76,13 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &8155652512962169518
+--- !u!114 &3565832653965796648
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5583218320828333152}
+  m_GameObject: {fileID: 7380591951208234106}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 80093a828cd993c4685c34e4e32e2097, type: 3}
@@ -164,6 +163,12 @@ PrefabInstance:
 --- !u!4 &7380591951207735388 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5268b04a7958f204c98816c03c756061,
+    type: 3}
+  m_PrefabInstance: {fileID: 7380591951208135388}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7380591951208234106 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100006, guid: 5268b04a7958f204c98816c03c756061,
     type: 3}
   m_PrefabInstance: {fileID: 7380591951208135388}
   m_PrefabAsset: {fileID: 0}

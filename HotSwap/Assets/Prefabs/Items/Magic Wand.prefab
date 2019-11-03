@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80093a828cd993c4685c34e4e32e2097, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boarder: {fileID: 2100000, guid: 56f7933ef97b70144bef919dd14cc466, type: 2}
-  nonBoarder: {fileID: 2100000, guid: 8ff9335a00e382b49b3f5b7ae68e64d9, type: 2}
+  boarder: {fileID: 2100000, guid: 92f53d0a9d070364a925070978e0fc12, type: 2}
+  nonBoarder: {fileID: 2100000, guid: f3777ff61dae182439464d03b3f21226, type: 2}
   isHighlighted: 0
 --- !u!1 &8971909289040000786
 GameObject:
@@ -27,7 +27,6 @@ GameObject:
   - component: {fileID: 7213578035197187510}
   - component: {fileID: 854182451366216478}
   - component: {fileID: 5302911287692674457}
-  - component: {fileID: 6003720614574631187}
   m_Layer: 0
   m_Name: Magic Wand
   m_TagString: grabbable
@@ -92,21 +91,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &6003720614574631187
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8971909289040000786}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80093a828cd993c4685c34e4e32e2097, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  boarder: {fileID: 2100000, guid: 92f53d0a9d070364a925070978e0fc12, type: 2}
-  nonBoarder: {fileID: 2100000, guid: f3777ff61dae182439464d03b3f21226, type: 2}
-  isHighlighted: 0
 --- !u!1001 &2364691310490514823
 PrefabInstance:
   m_ObjectHideFlags: 0

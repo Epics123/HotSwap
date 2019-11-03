@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 2379694007207000303}
   - component: {fileID: 5122804677075091220}
   - component: {fileID: 6172234125201621478}
-  - component: {fileID: 6817434841413242246}
+  - component: {fileID: 4631698090036644492}
   m_Layer: 0
   m_Name: Sledgehammer
   m_TagString: grabbable
@@ -78,8 +78,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &6817434841413242246
-MeshCollider:
+--- !u!65 &4631698090036644492
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -88,10 +88,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 4300000, guid: abaf31cd53de24d4abbed5aff26f86c8, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.15047729, y: 0.8968371, z: 0.07876122}
+  m_Center: {x: 0.005035341, y: 0.0033282638, z: -0.005619295}
 --- !u!1001 &2895199098106288923
 PrefabInstance:
   m_ObjectHideFlags: 0

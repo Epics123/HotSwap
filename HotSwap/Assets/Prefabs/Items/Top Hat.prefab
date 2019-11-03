@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4646112563911353620}
   - component: {fileID: 2096285038139807496}
   - component: {fileID: 2653837742705463318}
-  - component: {fileID: 7515469336834275293}
+  - component: {fileID: 6810991633488918197}
   m_Layer: 0
   m_Name: Top Hat
   m_TagString: grabbable
@@ -63,8 +63,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &7515469336834275293
-MeshCollider:
+--- !u!65 &6810991633488918197
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -73,10 +73,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 4300000, guid: 23cb1094dbe56314b9fab447ff34a9b4, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.22738966, y: 0.27767646, z: 0.18069762}
+  m_Center: {x: 0.0060593635, y: 0.13179356, z: 0.003446851}
 --- !u!114 &5623228836584019407
 MonoBehaviour:
   m_ObjectHideFlags: 0
