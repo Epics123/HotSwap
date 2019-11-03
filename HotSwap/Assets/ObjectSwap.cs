@@ -9,8 +9,13 @@ public class ObjectSwap : MonoBehaviour
 	public GameObject rightHand;
     public bool running = false;
 
-    // Start is called before the first frame update
-    void Start()
+	private Vector3 velocity = Vector3.zero;
+
+	Vector3 start;
+	Vector3 end;
+
+	// Start is called before the first frame update
+	void Start()
     {
 		leftHand = GameObject.Find("Controller (left)");
 		rightHand = GameObject.Find("Controller (right)");
@@ -19,43 +24,50 @@ public class ObjectSwap : MonoBehaviour
 	//Swaps objects if weight classes are equal
     public void SwapObjects(GameObject left, GameObject right)
     {
-        Vector3 tmp;
-        //tmp = left.transform.position;
-        //left.transform.position = right.transform.position;
-        //right.transform.position = tmp;
-        StartCoroutine("afterEffectSwap");
+		//Vector3 tmp;
+		//tmp = left.transform.position;
+		//left.transform.position = right.transform.position;
+		//right.transform.position = tmp;
+		start = left.transform.position;
+		end = right.transform.position;
+		StartCoroutine(afterEffectSwap(left, right));
+	}
 
-    }
-
-    IEnumerator afterEffectSwap()
+    IEnumerator afterEffectSwap(GameObject left, GameObject right)
     {
+		Debug.Log("test");
         running = true;
-        Vector3 start = leftHand.transform.position;
-        Vector3 end = rightHand.transform.position;
-
-        leftHand.transform.position = Vector3.Lerp(start, end, 1.0f);
-        rightHand.transform.position = Vector3.Lerp(end, start, 1.0f);
 
         GameObject after1;
         GameObject after2;
-
-        while (true)
+		left.GetComponent<Collider>().enabled = false;
+		right.GetComponent<Collider>().enabled = false;
+		right.GetComponent<Rigidbody>().useGravity = false;
+		left.GetComponent<Rigidbody>().useGravity = false;
+		while (true)
         {
-            if (Vector3.Distance(leftHand.transform.position, end) < 0.2f && Vector3.Distance(rightHand.transform.position, start) < 0.2f)
+			left.transform.position = Vector3.SmoothDamp(left.transform.position, end, ref velocity, Time.deltaTime, 30.0f);
+			right.transform.position = Vector3.SmoothDamp(right.transform.position, start, ref velocity, Time.deltaTime, 30.0f);
+			if (Vector3.Distance(left.transform.position, end) < 0.03f && Vector3.Distance(right.transform.position, start) < 0.03f)
             {
                 break;
             }
 
-            after1 = Instantiate(leftHand);
-            Destroy(after1, 0.1f);
-            after2 = Instantiate(rightHand);
-            Destroy(after2, 0.1f);
+			after1 = Instantiate(left);
+            Destroy(after1, 0.05f);
+            after2 = Instantiate(right);
+			Destroy(after2, 0.05f);
 
-            yield return new WaitForSeconds(0.2f);
+            yield return new WaitForSeconds(0.02f);
         }
+		right.GetComponent<Rigidbody>().useGravity = true;
+		left.GetComponent<Rigidbody>().useGravity = true;
+		left.GetComponent<Collider>().enabled = true;
+		right.GetComponent<Collider>().enabled = true;
+		left.transform.position = end;
+        right.transform.position = start;
 
-        leftHand.transform.position = end;
-        rightHand.transform.position = start;
-        running = false;
+		yield return new WaitForSeconds(0.1f);
+		running = false;
     }
 }
