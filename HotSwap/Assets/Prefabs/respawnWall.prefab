@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6573186311046298038
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6573186311046298039}
+  - component: {fileID: 6573186311046298041}
+  - component: {fileID: 6573186311046298040}
+  m_Layer: 0
+  m_Name: respawnWall
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6573186311046298039
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6573186311046298038}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.405, y: 0.811, z: -0.764}
+  m_LocalScale: {x: 1, y: 1, z: 1.4144}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6573186311046298041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6573186311046298038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 904b050636bb10640af7b3a6be310155, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  props:
+  - {fileID: 6182949384754264113, guid: daa46d317e293e2418a57dd549511e4e, type: 3}
+  - {fileID: 3256131053118637274, guid: 383084353ec49234e8dafca25489e693, type: 3}
+  - {fileID: 5583218320828333152, guid: 14446856ca4f58846a5ee8e6676b2b19, type: 3}
+  - {fileID: 4974610065480498575, guid: 28756ee939481f649b9cf063cb7d5b64, type: 3}
+  - {fileID: 2312733230597428566, guid: 0c8ccaa0b4e26884b93c0307dd495800, type: 3}
+  - {fileID: 2178917940921222860, guid: 77c8770c2e7f5854098bc6feaaf50a59, type: 3}
+  - {fileID: 2935734649916650685, guid: 26ee97f1b65611b46b56d2e764e65771, type: 3}
+  - {fileID: 8519044797774168639, guid: bc71b06b5f5673e4cb82df9b08a7c137, type: 3}
+  - {fileID: 4529959923922027868, guid: bc01eb652f4df374ebbdee9c89ca55fb, type: 3}
+  - {fileID: 6926437694361543666, guid: c0f8ee057a7012e4f8eb0215e3411dc7, type: 3}
+  - {fileID: 2275877738779855798, guid: 11eb4adb811986e488c2a6b7826538cd, type: 3}
+  - {fileID: 70129257717048459, guid: 2d5b8d65e74004b4a8cb71082d34f49d, type: 3}
+  - {fileID: 1015684682687839714, guid: 4c654228c90345f44a6aeb1d0bb2f654, type: 3}
+  - {fileID: 8971909289040000786, guid: 9fd64f12632772440bf7172b6ee7065b, type: 3}
+  - {fileID: 222077386126812288, guid: 110f60985ba0b934894a190ec20e1adc, type: 3}
+  - {fileID: 1127456519674327518, guid: c17c89927f59bc94f9df4a085ad8c136, type: 3}
+  - {fileID: 9109702407687005193, guid: efc9d2bdd9ce2e944abce8f34ed15f66, type: 3}
+  - {fileID: 6182949384754264113, guid: daa46d317e293e2418a57dd549511e4e, type: 3}
+  - {fileID: 2110974068506519941, guid: 8f848d8d25c7f1040ac3debf53132314, type: 3}
+  - {fileID: 4552262583399228833, guid: 1ce0aa848999fe040b06747eaf717cbd, type: 3}
+  - {fileID: 5536127039903364191, guid: b1b73aa4955f14a4985b8103b7420c8f, type: 3}
+  - {fileID: 3062747672364242927, guid: 355fecc4df5a11048857b3695ebd6a10, type: 3}
+  - {fileID: 0}
+  - {fileID: 3095019705067549872, guid: c6af64a24b998a647bf291ffefbe915f, type: 3}
+  - {fileID: 4898812858607149690, guid: 5874fde088d6f194e99e7ad32c6688df, type: 3}
+  - {fileID: 4178774972333806392, guid: 565086a1cbfcd0446a4a6230edff39d1, type: 3}
+  spawnLocs:
+  - {x: 1.213, y: 1.727, z: -0.105}
+  - {x: -0.813, y: 1.637, z: 0.772}
+  - {x: 0.348, y: 1.258, z: 0.331}
+  - {x: -1.033, y: 1.258, z: -0.661}
+--- !u!65 &6573186311046298040
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6573186311046298038}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1927416, y: 2.8656654, z: 1.7469286}
+  m_Center: {x: 0.5116645, y: 0.1900022, z: 0.3734639}

@@ -15,4 +15,7 @@ MonoBehaviour:
   name: Sunnoglasses
   description: STARE INTO THE SUN AND REALIZE THE POWER OF DAGON
   weight: 5
+  uniqueAudio: {fileID: 0}
+  collisionAudio: {fileID: 0}
+  good: 1
   model: {fileID: 100062, guid: fbe577a3750246d45bc7c539f1d6e434, type: 3}

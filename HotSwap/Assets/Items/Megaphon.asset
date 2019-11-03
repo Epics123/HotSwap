@@ -15,4 +15,7 @@ MonoBehaviour:
   name: Megaphone
   description: What designers wish their voice sounded like
   weight: 5
+  uniqueAudio: {fileID: 0}
+  collisionAudio: {fileID: 0}
+  good: 1
   model: {fileID: 100000, guid: 3a007a92125f62a4c8c18f6826e917cb, type: 3}

@@ -16,4 +16,7 @@ MonoBehaviour:
   description: A balloon, supposedly filled with water. Can be 3 different colours,
     just like blood!
   weight: 5
+  uniqueAudio: {fileID: 0}
+  collisionAudio: {fileID: 0}
+  good: 1
   model: {fileID: 100000, guid: 8543342980f2cf048874f5ff16f44900, type: 3}

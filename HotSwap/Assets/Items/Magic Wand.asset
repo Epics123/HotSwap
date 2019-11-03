@@ -15,4 +15,7 @@ MonoBehaviour:
   name: Magic Wand
   description: swoosh swoosh bang
   weight: 5
+  uniqueAudio: {fileID: 0}
+  collisionAudio: {fileID: 0}
+  good: 1
   model: {fileID: 100000, guid: 6c5e9713c1fdb5c4b850b775fa4b4349, type: 3}

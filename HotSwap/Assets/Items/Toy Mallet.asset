@@ -15,4 +15,7 @@ MonoBehaviour:
   name: Toy Mallet
   description: Unlike the real mallet this is lab-grown purely from DMT
   weight: 5
+  uniqueAudio: {fileID: 0}
+  collisionAudio: {fileID: 0}
+  good: 1
   model: {fileID: 100000, guid: f14dcc1d166c83e47915b47d9c9224cd, type: 3}

@@ -15,4 +15,7 @@ MonoBehaviour:
   name: Pocket Watch
   description: A cool watch
   weight: 5
+  uniqueAudio: {fileID: 0}
+  collisionAudio: {fileID: 0}
+  good: 1
   model: {fileID: 100016, guid: 165ee3b70e59655458b9f367a30da99f, type: 3}

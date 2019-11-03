@@ -15,4 +15,7 @@ MonoBehaviour:
   name: Disco Ball
   description: A shiny ball
   weight: 5
+  uniqueAudio: {fileID: 0}
+  collisionAudio: {fileID: 0}
+  good: 1
   model: {fileID: 100000, guid: d6608cbd822c8724683e54af313f52a8, type: 3}

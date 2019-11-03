@@ -15,4 +15,7 @@ MonoBehaviour:
   name: Dildo
   description: Warm and squishy
   weight: 5
+  uniqueAudio: {fileID: 0}
+  collisionAudio: {fileID: 0}
+  good: 1
   model: {fileID: 100000, guid: fbedc128451011e43a81fddbb991a3bd, type: 3}

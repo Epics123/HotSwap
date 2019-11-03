@@ -15,4 +15,7 @@ MonoBehaviour:
   name: duck
   description: A duck
   weight: 5
+  uniqueAudio: {fileID: 0}
+  collisionAudio: {fileID: 0}
+  good: 1
   model: {fileID: 100000, guid: 0a64bc7bce816a34ab079113229ad389, type: 3}

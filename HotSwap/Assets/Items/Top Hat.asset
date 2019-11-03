@@ -15,4 +15,7 @@ MonoBehaviour:
   name: Top Hat
   description: m'lady
   weight: 5
+  uniqueAudio: {fileID: 0}
+  collisionAudio: {fileID: 0}
+  good: 1
   model: {fileID: 100000, guid: 23cb1094dbe56314b9fab447ff34a9b4, type: 3}

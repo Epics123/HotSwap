@@ -15,4 +15,7 @@ MonoBehaviour:
   name: Candle
   description: Jack jumped over the candle stick
   weight: 5
+  uniqueAudio: {fileID: 0}
+  collisionAudio: {fileID: 0}
+  good: 0
   model: {fileID: 100000, guid: 45975abc918e48f49b40b9abeaac8e67, type: 3}

@@ -10,6 +10,7 @@ public class Item : ScriptableObject
 	public uint weight;
 	public AudioClip uniqueAudio;
 	public AudioClip collisionAudio;
+    public bool good;
 
 	List<Item> items = new List<Item>();
 

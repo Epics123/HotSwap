@@ -15,4 +15,7 @@ MonoBehaviour:
   name: Rock
   description: I AM ROCK
   weight: 5
+  uniqueAudio: {fileID: 0}
+  collisionAudio: {fileID: 0}
+  good: 1
   model: {fileID: 100010, guid: 941c22f0083639e458c7eab946a6dd26, type: 3}

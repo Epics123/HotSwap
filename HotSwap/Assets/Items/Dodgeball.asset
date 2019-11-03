@@ -15,4 +15,7 @@ MonoBehaviour:
   name: Dodgeball
   description: Wrench
   weight: 5
+  uniqueAudio: {fileID: 0}
+  collisionAudio: {fileID: 0}
+  good: 1
   model: {fileID: 100000, guid: 5b3ff30eb3f805b4b82e7bf9f1fa59e1, type: 3}

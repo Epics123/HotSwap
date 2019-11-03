@@ -9,9 +9,10 @@ public class respawn : MonoBehaviour
 
     void OnTriggerEnter(Collider col)
     {
-        if(col.tag == "grabbable")
+        if(col.tag == "grabbable" && !col.GetComponent<ItemInterface>().getGood())
         {
             respawnObjects();
+            Destroy(col.gameObject);
         }
     }
 

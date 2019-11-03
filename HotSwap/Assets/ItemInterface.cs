@@ -11,6 +11,11 @@ public class ItemInterface : MonoBehaviour
 		return "medium";
 	}
 
+    public bool getGood()
+    {
+        return item.good;
+    }
+
 	public AudioClip getUniqueAudio()
 	{
 		return item.uniqueAudio;

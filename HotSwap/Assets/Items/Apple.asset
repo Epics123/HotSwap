@@ -15,4 +15,7 @@ MonoBehaviour:
   name: Apple
   description: An apple
   weight: 5
+  uniqueAudio: {fileID: 0}
+  collisionAudio: {fileID: 0}
+  good: 1
   model: {fileID: 100000, guid: 5faaeb8321b0d9f4793f1caf37316eb7, type: 3}

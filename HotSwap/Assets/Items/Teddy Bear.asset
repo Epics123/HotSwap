@@ -15,4 +15,7 @@ MonoBehaviour:
   name: Teddy Bear
   description: Just like teddy roosevelt, this eats children in order to prevent constipation
   weight: 5
+  uniqueAudio: {fileID: 0}
+  collisionAudio: {fileID: 0}
+  good: 1
   model: {fileID: 100012, guid: 31f0352034c0df042a285c4bd5c8bc55, type: 3}

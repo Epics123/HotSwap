@@ -15,4 +15,7 @@ MonoBehaviour:
   name: Clock
   description: Fuck time man
   weight: 5
+  uniqueAudio: {fileID: 0}
+  collisionAudio: {fileID: 0}
+  good: 1
   model: {fileID: 100000, guid: a8ed093541cfd324daba3d274c6a62a2, type: 3}

@@ -15,4 +15,7 @@ MonoBehaviour:
   name: Phone
   description: Definitely not an iPhoneTM for copyright reasons
   weight: 5
+  uniqueAudio: {fileID: 0}
+  collisionAudio: {fileID: 0}
+  good: 1
   model: {fileID: 100000, guid: b58abb4755e00304bb76880d52a6ad37, type: 3}
