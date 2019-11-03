@@ -56,11 +56,13 @@ public class pointer : MonoBehaviour
             if (hit.transform.CompareTag("grabbable"))
             {
                 objectHit = hit.transform.gameObject;
-				objectHit.GetComponentInChildren<HighlightObject>().isHighlighted = true;
+                if(objectHit != null)
+				    objectHit.GetComponentInChildren<HighlightObject>().isHighlighted = true;
             }
             else
             {
-				objectHit.GetComponentInChildren<HighlightObject>().isHighlighted = false;
+                if(objectHit != null)
+				    objectHit.GetComponentInChildren<HighlightObject>().isHighlighted = false;
 				objectHit = null;
             }
         }
