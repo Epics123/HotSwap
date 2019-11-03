@@ -8,6 +8,8 @@ public class Item : ScriptableObject
 	public new string name;
 	public string description;
 	public uint weight;
+	public AudioClip uniqueAudio;
+	public AudioClip collisionAudio;
 
 	List<Item> items = new List<Item>();
 
