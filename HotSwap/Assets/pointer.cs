@@ -29,8 +29,10 @@ public class pointer : MonoBehaviour
         line.transform.localScale = new Vector3(thickness, thickness, 100f);
         line.transform.localPosition = new Vector3(0f, 0f, 50f);
         line.transform.localRotation = Quaternion.identity;
+		BoxCollider collider = line.GetComponent<BoxCollider>();
+		collider.enabled = false;
 
-        Material newMaterial = new Material(Shader.Find("Unlit/Color"));
+		Material newMaterial = new Material(Shader.Find("Unlit/Color"));
         newMaterial.SetColor("_Color", color);
         line.GetComponent<MeshRenderer>().material = newMaterial;
         line.SetActive(true);
