@@ -63,45 +63,46 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Clock.cs" />
-    <Compile Include="Assets\GameManager.cs" />
-    <Compile Include="Assets\GameStateManager.cs" />
-    <Compile Include="Assets\Grabbing.cs" />
-    <Compile Include="Assets\HidingSpotScript.cs" />
-    <Compile Include="Assets\HighlightObject.cs" />
-    <Compile Include="Assets\ignoreRaycastCollision.cs" />
-    <Compile Include="Assets\Item.cs" />
-    <Compile Include="Assets\ItemInterface.cs" />
-    <Compile Include="Assets\ObjectSound.cs" />
-    <Compile Include="Assets\ObjectSwap.cs" />
-    <Compile Include="Assets\pointer.cs" />
-    <Compile Include="Assets\teleporter.cs" />
-    <None Include="Assets\Blur.shader" />
-    <None Include="Assets\Distort.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
-    <None Include="Assets\HologramShader.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
-    <None Include="Assets\OutlineDistort.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
-    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
-    <None Include="Assets\FinalOutline.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
-    <None Include="Assets\Outline.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
-    <None Include="Assets\ApplyTexture.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
-    <None Include="Assets\OutlineBlur.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
+    <Compile Include="Assets\Scripts\Clock.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\GameStateManager.cs" />
+    <Compile Include="Assets\Scripts\Grabbing.cs" />
+    <Compile Include="Assets\Scripts\HidingSpotScript.cs" />
+    <Compile Include="Assets\Scripts\HighlightObject.cs" />
+    <Compile Include="Assets\Scripts\ignoreRaycastCollision.cs" />
+    <Compile Include="Assets\Scripts\Item.cs" />
+    <Compile Include="Assets\Scripts\ItemInterface.cs" />
+    <Compile Include="Assets\Scripts\ObjectSound.cs" />
+    <Compile Include="Assets\Scripts\ObjectSwap.cs" />
+    <Compile Include="Assets\Scripts\pointer.cs" />
+    <Compile Include="Assets\Scripts\respawn.cs" />
+    <Compile Include="Assets\Scripts\teleporter.cs" />
+    <None Include="Assets\Shaders\Blur.shader" />
+    <None Include="Assets\Shaders\Distort.shader" />
+    <None Include="Assets\Externals\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\Externals\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\Shaders\HologramShader.shader" />
+    <None Include="Assets\Externals\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\Externals\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\Shaders\OutlineDistort.shader" />
+    <None Include="Assets\Externals\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\Externals\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\Externals\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\Externals\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\Externals\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\Externals\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\Shaders\FinalOutline.shader" />
+    <None Include="Assets\Externals\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\Externals\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\Shaders\Outline.shader" />
+    <None Include="Assets\Externals\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\Externals\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
+    <None Include="Assets\Shaders\ApplyTexture.shader" />
+    <None Include="Assets\Externals\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\Externals\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\Shaders\OutlineBlur.shader" />
+    <None Include="Assets\Externals\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
+    <None Include="Assets\Externals\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/Repos/HotSwap/HotSwap/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
@@ -318,9 +319,6 @@
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
-    <Reference Include="Valve.Newtonsoft.Json">
-      <HintPath>D:/Repos/HotSwap/HotSwap/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Analytics.Editor">
       <HintPath>D:/Repos/HotSwap/HotSwap/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
@@ -329,6 +327,9 @@
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
       <HintPath>D:/Repos/HotSwap/HotSwap/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+    </Reference>
+    <Reference Include="Valve.Newtonsoft.Json">
+      <HintPath>D:/Repos/HotSwap/HotSwap/Assets/Externals/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -677,10 +678,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="SteamVR_Actions.csproj">
-      <Project>{1EEE5201-4C59-7D69-BA8C-0B613BFDCC07}</Project>
-      <Name>SteamVR_Actions</Name>
-    </ProjectReference>
     <ProjectReference Include="SteamVR_Input_Editor.csproj">
       <Project>{40DDCA0A-FB01-2569-B078-AC087D59FA5A}</Project>
       <Name>SteamVR_Input_Editor</Name>
@@ -696,6 +693,10 @@
     <ProjectReference Include="SteamVR_Windows_EditorHelper.csproj">
       <Project>{C0492AB2-550D-438F-1FCF-EE29BC76E0BD}</Project>
       <Name>SteamVR_Windows_EditorHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="SteamVR_Actions.csproj">
+      <Project>{1EEE5201-4C59-7D69-BA8C-0B613BFDCC07}</Project>
+      <Name>SteamVR_Actions</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
