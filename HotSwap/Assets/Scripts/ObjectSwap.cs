@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Swaps the selected left and right object when triggered
+/// </summary>
 public class ObjectSwap : MonoBehaviour
 {
 
@@ -24,10 +27,13 @@ public class ObjectSwap : MonoBehaviour
 	//Swaps objects if weight classes are equal
     public void SwapObjects(GameObject left, GameObject right)
     {
-		//Vector3 tmp;
-		//tmp = left.transform.position;
-		//left.transform.position = right.transform.position;
-		//right.transform.position = tmp;
+		// Instant swap
+		/*Vector3 tmp;
+		tmp = left.transform.position;
+		left.transform.position = right.transform.position;
+		right.transform.position = tmp;*/
+
+		// Gradual swap
 		start = left.transform.position;
 		end = right.transform.position;
 		StartCoroutine(afterEffectSwap(left, right));

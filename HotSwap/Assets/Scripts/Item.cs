@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// TODO: deprecate
+
 [CreateAssetMenu(fileName = "newItem", menuName = "Item")]
 public class Item : ScriptableObject
 {

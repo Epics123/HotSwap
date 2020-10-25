@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Spawns the given game objects randomly at given spawn locations throughout the scene
+/// </summary>
 public class respawn : MonoBehaviour
 {
     public List<GameObject> props;

@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using Valve.VR;
 
+/// <summary>
+/// A raycast from the player's hands that is used to select objects
+/// </summary>
 public class pointer : MonoBehaviour
 {
     public Color color;

@@ -2,10 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Switches the material between the outline shader and the normal shader when an object is selected
+/// </summary>
 public class HighlightObject : MonoBehaviour
 {
-    public Material boarder;
-    public Material nonBoarder;
+    public Material border;
+    public Material nonBorder;
 
     public bool isHighlighted = false;
 
@@ -21,8 +24,8 @@ public class HighlightObject : MonoBehaviour
     void Highlight()
     {
         if(isHighlighted)
-            GetComponent<Renderer>().material = boarder;
+            GetComponent<Renderer>().material = border;
         else
-            GetComponent<Renderer>().material = nonBoarder;
+            GetComponent<Renderer>().material = nonBorder;
     }
 }

@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using Valve.VR;
 
+/// <summary>
+/// This is not intended for the final game.
+/// Teleportation movement using a raycast to the new position.
+/// </summary>
 public class teleporter : MonoBehaviour
 {
 	public SteamVR_Input_Sources handType;

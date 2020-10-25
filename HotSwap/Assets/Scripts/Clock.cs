@@ -4,6 +4,9 @@ using UnityEngine;
 using TMPro;
 using System;
 
+/// <summary>
+/// This script manages the time pictured on the clock
+/// </summary>
 public class Clock : MonoBehaviour
 {
     public TMP_Text mClock;

@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using Valve.VR;
 
+/// <summary>
+/// Handles the ability to grab objects in the world with the controllers
+/// </summary>
 public class Grabbing : MonoBehaviour
 {
 	public SteamVR_Input_Sources handType;

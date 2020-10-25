@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// TODO: deprecate
 public class ItemInterface : MonoBehaviour
 {
 	public Item item;
