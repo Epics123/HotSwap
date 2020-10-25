@@ -80,6 +80,7 @@
     <None Include="Assets\Externals\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\Externals\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\Externals\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\Shaders\NewSurfaceShader.shader" />
     <None Include="Assets\Externals\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\Externals\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\Externals\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
@@ -90,6 +91,7 @@
     <None Include="Assets\Externals\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\Externals\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\Externals\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\Shaders\Outline.shader" />
     <None Include="Assets\Externals\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\Externals\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\Externals\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
