@@ -6,21 +6,19 @@ using System;
 
 public class Clock : MonoBehaviour
 {
-    public TMP_Text clock;
-    int hours, minutes;
-    float timer = 0.0f;
-    int startHour, endHour, halfway;
+    public TMP_Text mClock;
+    int mHours, mMinutes;
+    float mTimer = 0.0f;
+    int mStartHour, mEndHour, mHalfway;
 
-    // Start is called before the first frame update
     void Start()
     {
-        startHour = DateTime.Now.Hour;
-        hours = startHour;
-        endHour = startHour + 2;
-        halfway = endHour - 1;
+        mStartHour = DateTime.Now.Hour;
+        mHours = mStartHour;
+        mEndHour = mStartHour + 2;
+        mHalfway = mEndHour - 1;
     }
 
-    // Update is called once per frame
     void Update()
     {
         CountTime();
@@ -28,28 +26,28 @@ public class Clock : MonoBehaviour
 
     void CountTime()
     {
-        if(hours != endHour)
+        if(mHours != mEndHour)
         {
-            timer += Time.deltaTime;
-            minutes = Convert.ToInt32(timer % 60);
+            mTimer += Time.deltaTime;
+            mMinutes = Convert.ToInt32(mTimer % 60);
 
-            if (minutes >= 60)
+            if (mMinutes >= 60)
             {
-                timer = 0.0f;
-                minutes = 0;
-                hours++;
+                mTimer = 0.0f;
+                mMinutes = 0;
+                mHours++;
             }
 
-            if (hours == halfway && minutes > 30)
+            if (mHours == mHalfway && mMinutes > 30)
             {
                 ChangeClockColor();
                 FlashText();
             }
 
-            if (hours >= endHour)
-                clock.alpha = 1.0f;
+            if (mHours >= mEndHour)
+                mClock.alpha = 1.0f;
 
-            clock.text = LeadingZero(hours) + ":" + LeadingZero(minutes);
+            mClock.text = LeadingZero(mHours) + ":" + LeadingZero(mMinutes);
         }
     }
 
@@ -60,11 +58,11 @@ public class Clock : MonoBehaviour
 
     void ChangeClockColor()
     {
-        clock.color = Color.red;
+        mClock.color = Color.red;
     }
 
     void FlashText()
     {
-        clock.alpha = Mathf.PingPong(Time.time * 2, 1.0f);
+        mClock.alpha = Mathf.PingPong(Time.time * 2, 1.0f);
     }
 }
