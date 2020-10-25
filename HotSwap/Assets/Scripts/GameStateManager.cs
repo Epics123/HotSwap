@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-///This script creates a list that holds all of the unhidden illicit items and hopefully change the state of the game accordingly. 
+/// This script creates a list that holds all of the unhidden illicit items and hopefully change the state of the game accordingly. 
 /// </summary>
 public class GameStateManager : MonoBehaviour
 { 
@@ -14,8 +14,10 @@ public class GameStateManager : MonoBehaviour
     public void HideObject(GameObject hiddenObject)
     { 
         illicitItemList.Remove(hiddenObject);
-        Debug.Log(illicitItemList.Count);
-    }
+#if (UNITY_EDITOR)
+		Debug.Log(illicitItemList.Count);
+#endif
+	}
 
     void CheckList()  //call when needed
     {
